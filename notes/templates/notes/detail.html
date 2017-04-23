@@ -1,0 +1,21 @@
+{% extends 'notes/base.html' %}
+
+{% block body %}
+	<style>
+		.mdl-card{
+			width:100%;
+			margin: 20px;
+		}
+
+	</style>
+    <div class="mdl-card">
+    	<div class="mdl-card__title">
+    		<h1>{{ note.note_title }}</h1>
+    	</div>
+
+    	<div class="mdl-card__supporting-text">
+    		<h6>{{ note.date }}</h6>
+		    <p>{{ note.body }}</p>
+    	</div>
+    </div>
+{% endblock %}
